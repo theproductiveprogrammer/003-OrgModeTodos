@@ -236,11 +236,11 @@
 ;;  schedule.gif
 
 ;; Org also comes with a number
-;; of detailed reports which
-;; you can use. For now,
-;; though, let's build our own
-;; report and learn some ELisp
-;; on the way.
+;; of detailed reports (called
+;; [href=http://orgmode.org/manual/Agenda-Views.html](agenda views)) which you can use.
+;; For now, though, let's build
+;; our own report and learn some
+;; ELisp on the way.
 
 ;; First let's figure out what
 ;; report we want. I'd like a
