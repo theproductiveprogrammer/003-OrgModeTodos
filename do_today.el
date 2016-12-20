@@ -22,10 +22,9 @@
 ;; hyperlinks, tables, markup
 ;; formatting, exporting,
 ;; tags... the list looks
-;; endless and the
-;; implementation is smooth,
-;; rock-solid, and phenomenally
-;; usable.
+;; endless, the implementation
+;; is smooth, rock-solid, and
+;; phenomenally usable.
 
 ;; The fact that Org is not as
 ;; popularily used is sad. I
