@@ -580,8 +580,7 @@
 (defun is_todo_today(todo)
   (save-excursion
     (goto-char (car todo))
-    (let* ((props (org-entry-properties nil nil "SCHEDULED"))
-           (sch (assoc "SCHEDULED" props)))
+    (let ((sch (assoc "SCHEDULED" (org-entry-properties))))
       (if (not sch)
           t
         (org-time<= (cdr sch) (format-time-string "%Y-%m-%d 23:59"))))))
@@ -620,8 +619,7 @@
     (ignore-errors
       (org-map-entries
        #'(lambda ()
-           (let* ((props (org-entry-properties nil nil "TODO"))
-                  (status (assoc "TODO" props)))
+           (let ((status (assoc "TODO" (org-entry-properties))))
              (if (and status
                       (not (equal (cdr status) "DONE")))
                  (setq pos (cons (point) pos))))))
